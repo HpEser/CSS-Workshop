@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding-Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        div.box-1 {
+            /* "box-sizing: border-box" ozelligi ile width'i ayni px'te olan box'larin genislikleri ayni olacaktir.
+            Sadece context alani daralacaktir. Padding'lerini otomatik olarak kendi verecektir.
+            Box-sizing: border-box herbir div'in icine yazilabilecegi gibi evrensel eleman olan *'inda icinde yeralabilir. Ornek yukarda*/
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 25px;
+            font-size: 18px;
+            /* background-color: cornflowerblue; */
+            /* padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+            /* margin de oldugu gibi paddingde de sirali bir sekilde tek bir padding selektoru altinda siralayabiliriz. Ornek altta*/
+            /* padding: 20px 30px 20px 30px; */
+            /* Ust ve alti, sag ve solu icinde beraber yapabiliriz. Ornek altta.*/
+            /* padding: 25px 35px; */
+            /* Ya da hepsine ayni olcude px vereceksek tek deger ile de yapilir. Ornek altta.*/
+        }
+        
+        div.box-2 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cum quidem veniam sequi error consequuntur.
+    </div>
+    <div class="box-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cum quidem veniam sequi error consequuntur.
+    </div>
+
+</body>
+
+</html>
